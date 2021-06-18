@@ -5,7 +5,7 @@
 - Clone du repository GIT et checkout de la branche `step01`
 
 ```console
-git clone https://github.com/Zenika/nc-kafka-fundamentals && git checkout step01
+git clone git@github.com:zeroual/nc-kafka-fundamentals.git && git checkout step01
 ```
 
 - Setup de la stack docker
@@ -45,14 +45,14 @@ kafka-topics --if-not-exists --bootstrap-server kafka:9092 --create --topic demo
 - Verifier avec la CLI le topic créé
 
 ```console
-kafka-topics list --bootstrap-server kafka:9092
+kafka-topics --list --bootstrap-server kafka:9092
 ```
 > Checker également côté akhq
 
 - Démarrer un producer en CLI
 
 ```console
-kafka-console-producer --broker-list kafka:9092 --topic vehicle-positions
+kafka-console-producer --broker-list kafka:9092 --topic demo
 ```
 
 - Démarrer un consumer en CLI
